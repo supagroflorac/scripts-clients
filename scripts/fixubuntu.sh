@@ -5,12 +5,12 @@ CCUL="com.canonical.Unity.lenses"
 
 # Check if Canonical schema is present. Take first match, ignoring case.
 SCHEMA="$($GS list-schemas | grep -i $CCUL | head -1)"
-if [[ -z "$SCHEMA" ]]
-  then
-  printf "Error: could not find Canonical schema %s.\n" "$CCUL" 1>&2
-  exit 1
-else
-  CCUL="$SCHEMA"
+if [[ -z "$SCHEMA" ]] 
+    then
+        printf "Error: could not find Canonical schema %s.\n" "$CCUL" 1>&2
+        exit 1
+    else
+        CCUL="$SCHEMA"
 fi
 
 # Turn off "Remote Search", so search terms in Dash aren't sent to the internet
@@ -30,3 +30,7 @@ fi
 # Editing /etc/hosts is OK, but adding an iptables rule seems to be
 # a more elegant solution
 sudo iptables -A OUTPUT -d 91.189.92.11 -j REJECT
+
+# Suppression de l'icone amazon
+rm -f "/usr/share/applications/ubuntu-amazon-default.desktop"
+rm -f "/usr/share/unity-webapps/userscripts/unity-webapps-amazon/Amazon.user.js"
