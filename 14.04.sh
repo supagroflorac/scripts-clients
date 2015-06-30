@@ -1,9 +1,9 @@
 #/bin/bash
 
-apt-get -y install git
+sudo apt-get -y install git
 
-git clone https://github.com/supagroflorac/scripts-clients.git /root/script
+git clone https://github.com/supagroflorac/scripts-clients.git ~/scripts
 
-cd /root/script
+cd ~/scripts
 
 git checkout 14.04

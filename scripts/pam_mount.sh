@@ -1,6 +1,6 @@
 #/bin/bash
 
-serveur="serveur.cdrflorac.fr"
+server="serveur.cdrflorac.fr"
 
 #Installation des paquets nécessaires
 DEBIAN_FRONTEND='noninteractive' apt-get -y install cifs-utils libpam-mount
