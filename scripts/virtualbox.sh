@@ -2,8 +2,8 @@
 
 apt remove virtualbox virtualbox-dkms
 
-echo 'deb http://download.virtualbox.org/virtualbox/debian trusty contrib
-' > /etc//etc/apt/sources.list.d/virtualbox.list
+echo 'deb http://mirror.cdrflorac.fr/download.virtualbox.org/virtualbox/debian trusty contrib
+' > /etc/apt/sources.list.d/virtualbox.list
 
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- \
     | sudo apt-key add - 
