@@ -10,10 +10,10 @@ exec_script(){
     pos=$((columns - length + 1))
     ./scripts/$2 >> error.log 2>> error.log
     if [ $? -ne 0 ]; then
-        printf "\e[31m%*s\n\e[39m" $pos "Erreur"
+        printf "%s\n" $pos "Erreur"
         exit 1
     fi
-    printf "\e[32m%*s\n\e[39m" $pos "ok"
+    printf "%s\n" $pos "ok"
 }
 
 exec_script "configuration d'APT"                           apt.sh
