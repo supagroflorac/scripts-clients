@@ -21,7 +21,6 @@ exec_script 'Mise à jour du système'                        update.sh
 exec_script 'Installation des logiciels'                    software.sh
 exec_script "Installation d'OCS"                            ocs.sh
 exec_script 'Installation du scanner'                       scanner.sh
-exec_script "Configuration de cups"                         cups.sh
 exec_script "Configuration de Mozilla Firefox"              firefox.sh
 exec_script "Configuration de l'écran d'accueil"            lightdm.sh
 exec_script "Désactivation des notifications de version"    gconf.sh

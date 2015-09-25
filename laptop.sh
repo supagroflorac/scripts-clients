@@ -23,7 +23,6 @@ exec_script 'Installation des logiciels'                    software.sh
 exec_script 'Installation de pam_mount'                     pam_mount.sh
 exec_script "Installation d'OCS"                            ocs.sh
 exec_script 'Installation du scanner'                       scanner.sh
-exec_script "Configuration de cups"                         cups.sh
 exec_script "Configuration de Mozilla Firefox"              firefox.sh
 exec_script "Configuration de l'écran d'accueil"            lightdm.sh
 exec_script "Désactivation des notifcations de version"     gconf.sh
