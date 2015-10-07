@@ -10,4 +10,4 @@ echo 'ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select t
 apt -y install freemind gimp geany vlc r-base inkscape scribus audacity vim \
     openshot flashplugin-installer kdenlive ttf-mscorefonts-installer ssh \
     icedtea6-plugin qgis gdal-bin openshot avidemux pdfsam aptitude \
-    pdfshuffler
+    pdfshuffler freecad
