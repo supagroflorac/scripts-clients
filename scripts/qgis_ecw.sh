@@ -22,10 +22,9 @@ send -- "q"
 expect -regexp "Do you accept this License Agreement? \[yes/no\]"
 send "yes\n"
 interact' > /tmp/exec.sh
-chmod +x /tmp/exec.sh
-/tmp/exec.sh
+bash /tmp/exec.sh
 
-mv "/root/hexagon/ERDAS-ECW_JPEG_2000_SDK-5.2.1" "/usr/local/"
+mv "~/hexagon/ERDAS-ECW_JPEG_2000_SDK-5.2.1" "/usr/local/"
 
 ln -s /usr/local/ERDAS-ECW_JPEG_2000_SDK-5.2.1/Desktop_Read-Only/lib/x64/release/libNCSEcw.so /usr/local/lib/libNCSEcw.so
 
