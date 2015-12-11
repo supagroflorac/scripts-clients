@@ -4,7 +4,7 @@
 sed -i -e "s/^deb-src/# deb-src/g" /etc/apt/sources.list
 
 # Active le dépôt partner
-echo "deb http://mirror.cdrflorac.fr/archive.canonical.com/ubuntu $(lsb_release -sc) partner" \
+echo "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner" \
     > /etc/apt/sources.list.d/partner.list
 
 # Retournera toujours que c'est bon même si aucun remplacement n'a eu lieu
