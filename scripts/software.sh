@@ -8,6 +8,5 @@ echo 'ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select t
 
 # Installation des logiciels contenus dans les dépots
 apt -y install freemind gimp geany vlc r-base inkscape scribus audacity vim \
-    openshot flashplugin-installer kdenlive ttf-mscorefonts-installer ssh \
-    icedtea6-plugin qgis gdal-bin openshot avidemux pdfsam aptitude \
-    pdfshuffler freecad
+    flashplugin-installer kdenlive ttf-mscorefonts-installer ssh freecad \
+    icedtea6-plugin qgis gdal-bin avidemux pdfsam aptitude pdfshuffler
