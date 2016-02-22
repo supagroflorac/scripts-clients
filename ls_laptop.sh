@@ -17,6 +17,7 @@ exec_script(){
 }
 
 exec_script "configuration d'APT"                           apt.sh
+exec_script "Ajout du PPA libreoffice"                      libreoffice.sh
 exec_script 'Mise à jour du système'                        update.sh
 exec_script 'Installation des logiciels'                    software.sh
 exec_script "Installation d'OCS"                            ocs.sh
