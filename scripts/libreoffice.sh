@@ -1,3 +1,3 @@
 #!/bin/bash
 
-add-apt-repository ppa:libreoffice/ppa
+add-apt-repository -y ppa:libreoffice/ppa
