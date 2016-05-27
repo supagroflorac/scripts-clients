@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 DEBIAN_FRONTEND='noninteractive' apt-get -y install libpam-ldapd &&
 
@@ -16,7 +16,7 @@ services:       db files
 ethers:         db files
 rpc:            db files
 
-netgroup:       nis' > /etc/nsswitch.conf && 
+netgroup:       nis' > /etc/nsswitch.conf &&
 
 # Configuration du service nslcd
 cp /etc/nslcd.conf /etc/nslcd.conf.bak`date +%Y%m%d` &&
@@ -38,7 +38,7 @@ tls_reqcert never
 
 base passwd ou=Users,dc=florac,dc=meta
 map passwd loginshell \"/bin/bash\"
-" > /etc/nslcd.conf && 
+" > /etc/nslcd.conf &&
 
 service nslcd restart
 

@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # Installation de ocs-inventory
 DEBIAN_FRONTEND='noninteractive' apt -y install ocsinventory-agent

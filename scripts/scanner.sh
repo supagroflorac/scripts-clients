@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # Installation du Scanner
 #  - xsltproc est necessaire pour iscan

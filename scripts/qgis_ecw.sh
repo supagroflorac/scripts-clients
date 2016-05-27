@@ -1,6 +1,13 @@
-#/bin/bash
+#!/bin/bash
 
 ERDAS="ERDAS-ECW_JPEG_2000_SDK-5.2.1"
+
+# Nettoie les installation précédente
+rm /usr/local/lib/libNCSEcw.so
+rm -r /usr/local/ERDAS-ECW_JPEG_2000_SDK-5.2.1
+rm /usr/lib/gdalplugins/1.11/gdal_ECW_JP2ECW.so
+apt-get -y purge libgdal-ecw-src
+
 
 # Ajout du support de ECW
 cd /tmp
@@ -22,9 +29,9 @@ send -- "q"
 expect -regexp "Do you accept this License Agreement? \[yes/no\]"
 send "yes\n"
 interact' > /tmp/exec.sh
-bash /tmp/exec.sh
+expect /tmp/exec.sh
 
-mv "~/hexagon/ERDAS-ECW_JPEG_2000_SDK-5.2.1" "/usr/local/"
+mv "/root/hexagon/ERDAS-ECW_JPEG_2000_SDK-5.2.1" "/usr/local/"
 
 ln -s /usr/local/ERDAS-ECW_JPEG_2000_SDK-5.2.1/Desktop_Read-Only/lib/x64/release/libNCSEcw.so /usr/local/lib/libNCSEcw.so
 
@@ -44,5 +51,7 @@ rm /tmp/libgdal-ecw-src_1.10.0-1~precise4_all.deb
 
 gdal-ecw-build /usr/local/ERDAS-ECW_JPEG_2000_SDK-5.2.1/Desktop_Read-Only
 
-mkdir /usr/lib/gdalplugins/1.11
+mkdir -p /usr/lib/gdalplugins/1.11
 cp /usr/lib/gdalplugins/1.10/gdal_ECW_JP2ECW.so /usr/lib/gdalplugins/1.11
+
+gdalinfo --formats | grep ECW

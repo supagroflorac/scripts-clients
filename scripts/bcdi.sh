@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 VM='bcdi'
 FOLDER="$HOME/.virtualbox/$VM"
@@ -15,7 +15,7 @@ mkdir -p ~/"$FOLDER"
 VBoxManage createvm --name "$VM" \
                     --ostype "WindowsXP" \
                     --basefolder "$FOLDER/.." \
-                    --register 
+                    --register
 
 VBoxManage modifyvm "$VM" --memory 512 \
                           --acpi on \

@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 echo "[SeatDefaults]
 user-session=ubuntu

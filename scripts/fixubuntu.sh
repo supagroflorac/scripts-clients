@@ -1,11 +1,11 @@
-#/bin/bash
+#!/bin/bash
 
 GS="/usr/bin/gsettings"
 CCUL="com.canonical.Unity.lenses"
 
 # Check if Canonical schema is present. Take first match, ignoring case.
 SCHEMA="$($GS list-schemas | grep -i $CCUL | head -1)"
-if [ -z "$SCHEMA" ] 
+if [ -z "$SCHEMA" ]
     then
         printf "Error: could not find Canonical schema %s.\n" "$CCUL" 1>&2
         exit 1

@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 echo '# set this to 0 to disable apport, or to 1 to enable it
 # you can temporarily override this with
