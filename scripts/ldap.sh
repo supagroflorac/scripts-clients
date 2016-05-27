@@ -41,7 +41,3 @@ map passwd loginshell \"/bin/bash\"
 " > /etc/nslcd.conf &&
 
 service nslcd restart
-
-# Hack permettant aux utilisateur LDAP de se reconnecter après un vérouillage écran.
-# BUG : https://bugs.launchpad.net/ubuntu/+source/unity/+bug/1314095
-chmod u+s /sbin/unix_chkpwd
