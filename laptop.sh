@@ -16,7 +16,6 @@ exec_script(){
     printf "%s\n" $pos "ok"
 }
 
-
 exec_script "configuration d'APT"                           apt.sh
 exec_script "Ajout du PPA libreoffice"                      libreoffice.sh
 exec_script 'Mise à jour du système'                        update.sh
