@@ -1,11 +1,10 @@
-#/bin/bash
+#!/bin/bash
 
 # Désactive les dépots pour les sources.
 sed -i -e "s/^deb-src/# deb-src/g" /etc/apt/sources.list
 
 # Active le dépôt partner
-echo "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner" \
-    > /etc/apt/sources.list.d/partner.list
+sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
 
 # Retournera toujours que c'est bon même si aucun remplacement n'a eu lieu
 true
