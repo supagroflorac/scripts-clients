@@ -17,7 +17,7 @@ exec_script(){
 }
 
 exec_script "configuration d'APT"                           apt.sh
-exec_script "Ajout du PPA libreoffice"                      libreoffice.sh
+#exec_script "Ajout du PPA libreoffice"                      libreoffice.sh
 exec_script 'Mise à jour du système'                        update.sh
 exec_script 'Installation des logiciels'                    software.sh
 exec_script 'Installation de LDAP'                          ldap.sh
@@ -26,9 +26,7 @@ exec_script "Configuration de l'écran d'accueil"            lightdm.sh
 exec_script "Installation d'OCS"                            ocs.sh
 exec_script 'Installation du scanner'                       scanner.sh
 exec_script "Configuration de NTP"                          ntp.sh
-#exec_script "Configuration de cups"                         cups.sh
 exec_script "Configuration de Mozilla Firefox"              firefox.sh
-
 exec_script "Désactivation des notifcations de version"     gconf.sh
 exec_script "Désactivation des rapports d'erreur"           apport.sh
 exec_script "Remplacement du fond d'écran"                  wallpaper.sh
