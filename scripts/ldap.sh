@@ -56,7 +56,7 @@ echo "#!/bin/sh -e
 service nslcd restart
 
 exit 0
-" > "/etv/rc.local" &&
+" > "/etc/rc.local" &&
 
 
 
