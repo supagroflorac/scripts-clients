@@ -59,8 +59,6 @@ exit 0
 " > "/etc/rc.local" &&
 
 
-sed -i 's/\start-stop-daemon --stop --oknodo --pidfile $K5START_PIDFILE/\1start-stop-daemon --stop --oknodo --retry 10 --pidfile $K5START_PIDFILE/' /etc/init.d/nslcd
-sed -i 's/\start-stop-daemon --stop --oknodo \/\1start-stop-daemon --stop --oknodo --retry 10 \/' /etc/init.d/nslcd
 
 # Ajoute le redémarrage de nslcd a la fin du boot de la machine
 if ! grep -q 'service nslcd restart' /etc/rc.local ; then
