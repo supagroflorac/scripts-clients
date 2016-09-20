@@ -25,7 +25,7 @@ uid nslcd
 gid nslcd
 
 # The location at which the LDAP server(s) should be reachable.
-uri ldap://bdc-florac.cdrflorac.fr/
+uri ldap://10.48.21.27/
 
 # The search base that will be used for all queries.
 base dc=florac,dc=meta
