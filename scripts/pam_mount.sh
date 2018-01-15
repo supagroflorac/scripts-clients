@@ -23,22 +23,22 @@ echo '<?xml version="1.0" encoding="utf-8" ?>
         <!-- Volume definitions -->
 
         <!--home-->
-            <volume options="acl,iocharset=utf8" user="*"
+            <volume options="acl,iocharset=utf8,vers=1.0" user="*"
             mountpoint="~/Reseau/Reseau-Perso"
             path="%(USER)"
             server="'$server'" fstype="cifs" />
             <!--SupAgro-->
-            <volume options="acl,iocharset=utf8" user="*"
+            <volume options="acl,iocharset=utf8,vers=1.0" user="*"
             mountpoint="~/Reseau/Reseau-Activites"
             path="Activites"
             server="'$server'" fstype="cifs" />
             <!--Stages-->
-            <volume options="acl,iocharset=utf8" user="*"
+            <volume options="acl,iocharset=utf8,vers=1.0" user="*"
             mountpoint="~/Reseau/Reseau-Stagiaires"
             path="Stagiaires"
             server="'$server'" fstype="cifs" />
             <!--Ressources-->
-        <volume options="acl,iocharset=utf8" user="*"
+        <volume options="acl,iocharset=utf8,vers=1.0" user="*"
             mountpoint="~/Reseau/Reseau-Ressources"
             path="Ressources"
             server="'$server'" fstype="cifs" />
