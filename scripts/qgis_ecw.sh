@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ERDAS="ERDAS-ECW_JPEG_2000_SDK-5.2.1"
 

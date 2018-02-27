@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Configuration de firefox
 echo "user_pref(\"browser.startup.homepage\",\"http://www.cdrflorac.fr\");

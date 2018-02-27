@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 apt-add-repository -y -u ppa:ubuntugis/ubuntugis-unstable
 

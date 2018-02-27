@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Création de l'utilisateur
 useradd --create-home --comment "Poste" --groups adm,lpadmin,sudo,sambashare supagro --shell /bin/bash &&

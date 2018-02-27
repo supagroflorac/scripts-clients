@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ## Installation de Maperitive
 apt-get -y install mono-runtime libmono-winforms2.0-cil mono-complete

@@ -1,5 +1,4 @@
-#!/bin.bash
-#-*- coding: utf-8 -*-
+#!/usr/bin/env bash
 
 exec_script(){
     text="$1 : "

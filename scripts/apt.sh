@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Désactive les dépots pour les sources.
 sed -i -e "s/^deb-src/# deb-src/g" /etc/apt/sources.list

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 VM='bcdi'
 FOLDER="$HOME/.virtualbox/$VM"

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 apt -y remove openntpd ntp ntpdate
 apt -y install ntp
