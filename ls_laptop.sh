@@ -18,14 +18,11 @@ exec_script(){
 exec_script "configuration d'APT"                           apt.sh
 exec_script 'Mise à jour du système'                        update.sh
 exec_script 'Installation des logiciels'                    software.sh
-exec_script "Installation d'OCS"                            ocs.sh
-exec_script 'Installation du scanner'                       scanner.sh
 exec_script "Configuration de Mozilla Firefox"              firefox.sh
 exec_script "Configuration de l'écran d'accueil"            lightdm.sh
 exec_script "Désactivation des notifications de version"    gconf.sh
 exec_script "Désactivation des rapports d'erreur"           apport.sh
 exec_script "Remplacement du fond d'écran"                  wallpaper.sh
-exec_script "Ajout de l'utilisateur par défaut"             add_default_user.sh
 exec_script "Protection de la vie privée"                   fixubuntu.sh
 
 exit 0
